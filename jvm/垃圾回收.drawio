@@ -1,0 +1,61 @@
+<mxfile host="Electron" modified="2023-07-30T10:18:12.727Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="S6GfjRHnSokvgj_x8AiQ" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="Wz_70Up_-W5toIah2ks2">
+    <mxGraphModel dx="2074" dy="2004" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="-670" width="480" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-2" value="引用计数" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-633" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-3" value="标记清除" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-560" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-4" value="标记整理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-490" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-5" value="标记复制" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-420" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-7" value="GC 算法" style="ellipse;whiteSpace=wrap;html=1;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="-360" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-8" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="-670" width="500" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-9" value="垃圾收集器" style="ellipse;whiteSpace=wrap;html=1;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="-360" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-11" value="CMS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-525" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-12" value="ParNew" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-630" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-13" value="适合老年代" style="ellipse;whiteSpace=wrap;html=1;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="-520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-14" value="适合新生代" style="ellipse;whiteSpace=wrap;html=1;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="534" y="-415" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-15" value="" style="shape=cross;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1065" y="-565" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-16" value="G1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-450" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-21" value="&lt;div style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;ParNew：标记，并发清除&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;CMS：初始标记（GCROOT，年轻代存活对象对老年代的引用） -&amp;gt; 并发标记 -&amp;gt; 重新标记 -&amp;gt; 并发清理 -&amp;gt; 重置gc线程为用户线程&lt;br&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/font&gt;&lt;div style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;G1：分为2048个区域，新生代老年代是逻辑上的而非物理上的，新生代还有H区用来存放大对象。&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="230" y="-300" width="1100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-22" value="&lt;div style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b&gt;CardTable&lt;/b&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;老年代引用了新生代，老年代采用card table来记录新生代的引用关系，如果一个老年代对象指向新生代时，&lt;/div&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 20px;&quot;&gt;write-barrier即在card table中标记那一块old space为dirty&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b&gt;RemeberbeSet&lt;/b&gt;&lt;br style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;每个region都有一个remeberbeset来记录其他region对当前region的引用，这个引用是个map结构，key为区域地址，value为cardtable地址。&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="230" y="-178" width="1100" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="-j_wgvQu7GpVuEpdcq0D-23" value="&lt;div style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b&gt;三色标记法&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/b&gt;黑白灰，开始标记前都是白色，所有引用都遍历后变为黑色，部分遍历的为灰色，未遍历的为白色&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;当一个某一个灰色对象到白色对象的引用被删除，且新增黑色对象到白色对象的引用时，白色对象容易漏标（存活的但是以为是不可达），CMS采用了增量更新的方法解决，G1采用了快照的方式来解决。&lt;br&gt;&lt;br&gt;&lt;b&gt;漏标问题&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/b&gt;增量更新：新增时，write-barria会记录会将黑色节点记录为需要重新标记的节点&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;快照：删除节点时，write-barria会将删除引用指向节点记为存活。&lt;/div&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 20px;&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="230" y="10" width="1100" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

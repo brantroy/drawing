@@ -1,0 +1,205 @@
+<mxfile host="Electron" modified="2023-07-30T08:49:01.393Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="zAgNXmeQDXiVPbelHK54" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="Wz_70Up_-W5toIah2ks2">
+    <mxGraphModel dx="2074" dy="1604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nbI6I9clv4R_py1dQzni-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="25" width="550" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-50" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="369.5" y="56.5" width="220" height="497" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;堆&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="170" y="80" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-4" target="nbI6I9clv4R_py1dQzni-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-13" value="对象分配" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nbI6I9clv4R_py1dQzni-9">
+          <mxGeometry x="-0.1333" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-4" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;方法栈&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-5" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;元数据区&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="170" y="420" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;程序计数器&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="420" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-5" target="nbI6I9clv4R_py1dQzni-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-12" value="static对象的分配" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nbI6I9clv4R_py1dQzni-11">
+          <mxGeometry x="-0.2291" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#333333;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-7" target="nbI6I9clv4R_py1dQzni-61">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="305" />
+              <mxPoint x="680" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;本地方法栈&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-14" value="&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="710" y="43" width="160" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-17" value="栈帧" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1025" y="16" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-22" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;方法栈&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="738.5" y="228" width="103" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-24" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="990" y="38" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#333333;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-25" target="nbI6I9clv4R_py1dQzni-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="53" />
+              <mxPoint x="1150" y="10" />
+              <mxPoint x="140" y="10" />
+              <mxPoint x="140" y="135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-70" value="局部变量表中的对象" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=#333333;" vertex="1" connectable="0" parent="nbI6I9clv4R_py1dQzni-69">
+          <mxGeometry x="-0.1068" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-25" value="局部变量表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="995" y="43" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-26" value="动态链接" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="995" y="63" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-27" value="操作数栈" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="995" y="83" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-28" value="方法出口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="995" y="103" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-29" value="栈帧" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="730" y="63" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-30" value="栈帧" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="730" y="103" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#333333;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-29" target="nbI6I9clv4R_py1dQzni-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-31" value="栈帧" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="730" y="143" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-32" value="栈帧" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="730" y="183" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-33" value="方法栈属于线程中的区域，其中包含很多个栈帧，每个栈帧对应一个执行的方法。" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;" vertex="1" parent="1">
+          <mxGeometry x="860" y="143" width="110" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-34" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=#333333;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-4" target="nbI6I9clv4R_py1dQzni-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="310" as="sourcePoint" />
+            <mxPoint x="710" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-37" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="110" y="-100" width="550" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-38" value="新生代（1/3）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-85" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-39" value="老年代（2/3）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="470" y="-85" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-40" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="110" y="-240" width="550" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-41" value="Eden（伊甸园）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-230" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-44" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=#333333;exitX=0.459;exitY=0.05;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-38" target="nbI6I9clv4R_py1dQzni-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="-110" as="sourcePoint" />
+            <mxPoint x="300" y="-150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-45" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;堆&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-67.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-46" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=#333333;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-1" target="nbI6I9clv4R_py1dQzni-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="60" as="sourcePoint" />
+            <mxPoint x="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-49" value="Survive" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-230" width="325" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-48" value="Eden区与Survive默认比例为1:8&lt;br&gt;新生代发生youngGC时，存活下来的对象从Eden区复制到Survive区。" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;" vertex="1" parent="1">
+          <mxGeometry x="110" y="-305" width="550" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-42" value="S0（From）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-222" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-43" value="S1(To)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="530" y="-224" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-52" value="线程私有" style="ellipse;whiteSpace=wrap;html=1;align=center;dashed=1;rounded=0;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="539" y="370" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#333333;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-54" target="nbI6I9clv4R_py1dQzni-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-54" value="类加载器" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="180" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#333333;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-55" target="nbI6I9clv4R_py1dQzni-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-55" value="class文件" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;rounded=0;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="196" y="780" width="88" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-60" value="执行引擎" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="410" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-61" value="本地方法接口" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="620" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-62" value="本地方法库" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="830" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-64" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=#333333;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-61" target="nbI6I9clv4R_py1dQzni-62">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="760" y="670" as="sourcePoint" />
+            <mxPoint x="860" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-65" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=#333333;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="nbI6I9clv4R_py1dQzni-60" target="nbI6I9clv4R_py1dQzni-61">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="540" y="670" as="sourcePoint" />
+            <mxPoint x="595" y="669.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-66" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=#333333;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;width=12;endSize=9.33;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1370" y="1850" as="sourcePoint" />
+            <mxPoint x="1460" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nbI6I9clv4R_py1dQzni-67" value="" style="shape=doubleArrow;direction=south;whiteSpace=wrap;html=1;rounded=0;strokeColor=#666666;fontFamily=Helvetica;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="455" y="590" width="30" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

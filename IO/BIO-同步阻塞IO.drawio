@@ -1,0 +1,52 @@
+<mxfile host="Electron" modified="2023-07-30T05:10:42.785Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="_4MsXuenE4NxuhyCjIhL" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="pDNi_J8IDGSdM1oEFHKg">
+    <mxGraphModel dx="1418" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5B_qmG2391QqQOuhUddm-2" value="用户态" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="110" width="480" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-3" value="内核态" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="280" width="480" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-4" value="磁盘" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="430" width="480" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" target="5B_qmG2391QqQOuhUddm-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="220" as="sourcePoint" />
+            <mxPoint x="570" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-6" value="调用系统函数并等待结果，自身被阻塞" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="530" y="230" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.288;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="5B_qmG2391QqQOuhUddm-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="270" as="sourcePoint" />
+            <mxPoint x="300" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-8" value="系统调用结束后用户线程恢复执行" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="304" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" target="5B_qmG2391QqQOuhUddm-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="390" as="sourcePoint" />
+            <mxPoint x="570" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.271;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="5B_qmG2391QqQOuhUddm-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="440" as="sourcePoint" />
+            <mxPoint x="290" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5B_qmG2391QqQOuhUddm-11" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;BIO，同步阻塞IO&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="270" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
