@@ -1,0 +1,25 @@
+<mxfile host="Electron" modified="2023-08-27T14:35:03.950Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="PJoP7daf-RMdytvbbakM" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="Jx3S6isMH1gXykvuB78a">
+    <mxGraphModel dx="1418" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BkqaOBFZ0sSfB5TziI9f-2" value="buf（字符数组）" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="200" y="220" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BkqaOBFZ0sSfB5TziI9f-3" value="len（长&amp;nbsp; &amp;nbsp; &amp;nbsp; 度）" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BkqaOBFZ0sSfB5TziI9f-4" value="free（空闲空间）" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="200" y="340" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BkqaOBFZ0sSfB5TziI9f-5" value="SDS内存结构" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="420" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BkqaOBFZ0sSfB5TziI9f-6" value="1、字符数组以&#39;\0&#39;结尾，兼容C的字符串格式，能够使用C的字符串操作函数来进行字符串操作。对于redis而言，字符串通过len来确定字符是否结束。&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2、redis中字符串是以len来判断是否结束的，此时对于二进制等很多含有\0这个特殊字符的数据也能做到兼容（C的字符串不行）。&lt;br&gt;&lt;br&gt;3、redis中的字符串内存分配策略是分配时预留分配更多的空间，当len小于1m时，分配时会分配双倍的内存，给free的长度大小等于len的值。如果len大于1m时，每次&lt;span style=&quot;background-color: initial;&quot;&gt;多分配1m的空间给free。这样就避免了每次修改数据时，需要重复分配空间的问题。&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="450" y="220" width="250" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

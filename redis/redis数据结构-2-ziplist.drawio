@@ -1,0 +1,61 @@
+<mxfile host="Electron" modified="2023-08-27T14:56:57.842Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="xxt7EZNLC0MqgC_jkQaR" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="Jx3S6isMH1gXykvuB78a">
+    <mxGraphModel dx="1418" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-1" value="zlbytes（4字节）&lt;br&gt;整个ziplist的长度" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="159" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-2" value="zltail（4字节）&lt;br&gt;最后元素的偏移量" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="279" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-3" value="zlten（2字节）&lt;br&gt;列表节点的个数" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="399" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-4" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="35" width="35" height="325" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-5" value="head" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="314" y="150" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-6" value="entry&lt;br&gt;列表头元素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="520" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-7" value="......" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="640" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-8" value="entry&lt;br&gt;列表尾元素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="760" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-9" value="zlend（1字节）&lt;br&gt;列表结束标记" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="881" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-11" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="329" y="37" width="35" height="325" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-12" value="entries" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-13" value="结束标记（1字节）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="881" y="150" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-14" value="prevlength（1或3字节）&lt;br&gt;前一个entry的长度" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="354" y="330" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-15" value="encoding（1、2或5字节）&lt;br&gt;data的具体数据类型" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="494" y="330" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-16" value="data&lt;br&gt;真正的数据部分" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="654" y="330" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-17" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="562" y="140" width="35" height="325" as="geometry" />
+        </mxCell>
+        <mxCell id="bbXOPeSCTi-NYY_jECoW-18" value="entry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="554.5" y="390" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
